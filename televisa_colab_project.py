@@ -208,31 +208,31 @@ fig4 = px.box(
 # 6. EXPORT TO HTML DASHBOARD (Single View)
 # ------------------------------------------------------------------------------
 
-dashboard_filename = "Televisa_Digital_Analyst_Dashboard.html"
-print(f"\nExporting Dashboard to {dashboard_filename}...")
+# dashboard_filename = "Televisa_Digital_Analyst_Dashboard.html"
+# print(f"\nExporting Dashboard to {dashboard_filename}...")
 
-with open(dashboard_filename, 'w') as f:
-    f.write("<html><head><title>TelevisaUnivision Digital Analyst Dashboard</title></head><body>")
-    f.write("<h1 style='font-family:Arial; text-align:center;'>Digital Campaign Performance Dashboard</h1>")
-    f.write("<hr>")
-    f.write(fig1.to_html(full_html=False, include_plotlyjs='cdn'))
-    f.write("<hr>")
-    f.write(fig2.to_html(full_html=False, include_plotlyjs='cdn'))
-    f.write("<hr>")
-    f.write(fig3.to_html(full_html=False, include_plotlyjs='cdn'))
-    f.write("<hr>")
-    f.write(fig4.to_html(full_html=False, include_plotlyjs='cdn'))
-    f.write("</body></html>")
+# with open(dashboard_filename, 'w') as f:
+#     f.write("<html><head><title>TelevisaUnivision Digital Analyst Dashboard</title></head><body>")
+#     f.write("<h1 style='font-family:Arial; text-align:center;'>Digital Campaign Performance Dashboard</h1>")
+#     f.write("<hr>")
+#     f.write(fig1.to_html(full_html=False, include_plotlyjs='cdn'))
+#     f.write("<hr>")
+#     f.write(fig2.to_html(full_html=False, include_plotlyjs='cdn'))
+#     f.write("<hr>")
+#     f.write(fig3.to_html(full_html=False, include_plotlyjs='cdn'))
+#     f.write("<hr>")
+#     f.write(fig4.to_html(full_html=False, include_plotlyjs='cdn'))
+#     f.write("</body></html>")
 
-try:
-    # Try to open automatically if running locally
-    import webbrowser
-    import os
-    webbrowser.open('file://' + os.path.realpath(dashboard_filename))
-except:
-    pass
+# try:
+#     # Try to open automatically if running locally
+#     import webbrowser
+#     import os
+#     webbrowser.open('file://' + os.path.realpath(dashboard_filename))
+# except:
+#     pass
 
-print(f"Visualization Suite Generated Successfully. Open '{dashboard_filename}' to view.")
+# print(f"Visualization Suite Generated Successfully. Open '{dashboard_filename}' to view.")
 
 # ------------------------------------------------------------------------------
 # 7. EXPORT DATASET
