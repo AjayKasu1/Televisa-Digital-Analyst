@@ -13,17 +13,23 @@ This project demonstrates automated reporting, data engineering, and visualizati
     -   "High Stakes" Client Scatter Plot
     -   eCPM Efficiency Gauge
 
-## Files
 - `televisa_colab_project.py`: The main Python script. Designed to be run locally or in Google Colab. contains all logic for data generation, analysis, and visualization.
-
+- `app.py`: The Streamlit web application.
 - `simulated_data/`: Folder containing the exported CSV dataset (`televisa_campaign_data.csv`).
 
 ## How to Run
-1.  **Local Execution**:
-    ```bash
-    pip install pandas plotly numpy
-    python televisa_colab_project.py
-    ```
+### Option 1: Streamlit App (Recommended)
+This launches the full interactive web application.
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+### Option 2: Local Python Script
+```bash
+pip install pandas plotly numpy
+python televisa_colab_project.py
+```
 2.  **Google Colab**:
     Simply copy the contents of `televisa_colab_project.py` into a Google Colab cell and execute.
 
