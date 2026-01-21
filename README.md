@@ -1,6 +1,10 @@
 # TelevisaUnivision Digital Analyst Portfolio Project
 
 ##  Project Overview
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://televisa-digital-analyst-nezyypeprqvzbkksenvgwq.streamlit.app/)
+
+**🔴 [View Live Demo Here](https://televisa-digital-analyst-nezyypeprqvzbkksenvgwq.streamlit.app/)**
+
 This project demonstrates automated reporting, data engineering, and visualization capabilities for a Digital Analyst role. It simulates a digital ad campaign environment to generate insights, calculate pacing metrics, and identify at-risk campaigns using Python.
 
 ## Key Features
